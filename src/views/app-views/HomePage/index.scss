@@ -1,0 +1,441 @@
+@import "../../assets/scss/variables";
+
+.homepage--nav {
+  background: #efefef;
+  padding: 5rem 0;
+}
+
+.homepage--header-container {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 94.79%,
+      #ffffff 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../assets/images/bg-homepage-header.png");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: center;
+  margin: 0;
+}
+
+.homepage--header-container__background {
+  background: rgba(0, 17, 22, 0.8);
+  height: 100%;
+  @media (min-width: $breakpoint-tablet) {
+    background: unset;
+  }
+}
+
+.homepage--header-copy {
+  padding: 3rem 2rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 8rem 3rem;
+    height: 100%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    padding: 6rem 5rem;
+  }
+  @media (min-width: $breakpoint-desktop-l) {
+    padding: 18rem 18rem;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+    color: #ffffff;
+    padding: 3rem 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      color: #000000;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      max-width: 552px;
+    }
+  }
+
+  .homepage--header-copy__p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    @media (min-width: $breakpoint-tablet) {
+      line-height: 19px;
+      color: #3f3f3f;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  .btn__homepage {
+    background-color: #09789b;
+    border: unset;
+    border-color: unset;
+    border-width: unset;
+    border-radius: 5px;
+    padding: 0.2rem 2rem;
+    button {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 31px;
+      color: #ffffff;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.homepage--pattern-container {
+  background-color: #ffffff;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    padding: 0 5rem;
+  }
+  @media (min-width: $breakpoint-desktop-l) {
+    padding: 0 15rem;
+  }
+
+  .homepage--pattern-illustration {
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoint-desktop) {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (min-width: $breakpoint-desktop-l) {
+      width: 650px;
+    }
+  }
+  .btn-link {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 3rem;
+    margin-right: unset;
+    padding-right: unset;
+
+    button {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.18em;
+      color: #000000;
+      background: transparent;
+      border: none;
+      align-self: flex-end;
+      width: 150px;
+    }
+
+    .btn--border--bottom {
+      width: 150px;
+      margin: 1rem 3rem;
+      padding: 2px;
+      background-color: #ff9b00;
+      padding: 2px;
+      margin-right: unset;
+    }
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    color: #000000;
+    padding-bottom: 2rem;
+    margin: unset;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 28px;
+    }
+  }
+
+  .caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 45%;
+    padding: 8rem 0rem 0rem 5rem;
+
+    @media (min-width: $breakpoint-desktop-l) {
+      width: 40%;
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      color: #ffffff;
+      background: rgba(0, 17, 22, 0.8);
+      font-family: Poppins;
+      padding: 4rem 2rem;
+
+      @media (min-width: $breakpoint-tablet) {
+        padding: unset;
+        // width: 50%;
+        background: unset;
+        line-height: 32px;
+        color: #3f3f3f;
+      }
+    }
+  }
+}
+
+.homepage-how-it-works {
+  background-image: url("../../assets/images/bg-how-it-works.png");
+  height: 57.875rem;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: center;
+  background-size: cover;
+  display: none;
+  img {
+    width: 100px;
+    height: 100px;
+    @media (min-width: $breakpoint-tablet) {
+      width: unset;
+      height: unset;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 4.625rem;
+    margin-top: 3.625rem;
+  }
+  .homepage-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(11, 5, 5, 0.75);
+    height: 100%;
+    width: 100%;
+  }
+  .homepage-how-it-works-animated {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+  }
+  .sm-flex-column {
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+    .arrow--group-top {
+      transform: rotate(90deg);
+      @media (min-width: $breakpoint-tablet) {
+        transform: unset;
+        .invest-icon {
+          transform: rotate(-10deg) !important;
+        }
+        .get-funds-icon {
+          transform: rotate(10deg) !important;
+        }
+      }
+    }
+    .arrow--group-bottom {
+      transform: rotate(90deg);
+      @media (min-width: $breakpoint-tablet) {
+        transform: unset;
+      }
+    }
+  }
+  .middle-flex-column {
+    @media (min-width: $breakpoint-tablet) {
+      .top {
+        padding: 5rem 0;
+      }
+      .bottom {
+        padding: 5rem 0;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.swingimage {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.alternate-image {
+  /* for chrome and safari*/
+
+  -webkit-animation: alternate 5s ease-in-out forwards infinite;
+
+  /*for firefox*/
+  -moz-animation: alternate 5s ease-in-out forwards infinite;
+
+  /* for opera*/
+  -o-animation: alternate 5s ease-in-out forwards infinite;
+
+  /* Standard syntax*/
+
+  animation: alternate 5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes alternate {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes alternate {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-o-keyframes alternate {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes alternate {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.btn-link-homepage {
+  color: #fbc658 !important;
+  background: unset;
+  border: none;
+
+  &:hover {
+    color: #fbc670 !important;
+    background: unset;
+    border: none;
+  }
+  &:focus {
+    outline: unset;
+    outline: unset;
+  }
+}
+
+.features-section {
+  padding: 1rem 50px !important;
+
+  h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+    color: #ffffff;
+    padding: 3rem 0;
+    text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      color: #000000;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 50px;
+      padding: unset;
+      margin: 2rem 0;
+    }
+  }
+}
+
+.deals-carousel {
+  p {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 5rem;
+  }
+}

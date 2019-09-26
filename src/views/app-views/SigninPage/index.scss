@@ -1,0 +1,186 @@
+@import "../../assets/scss/variables";
+
+.signin-container {
+  margin-bottom: 10rem;
+
+  section {
+    margin: unset;
+    @media (min-width: $breakpoint-tablet) {
+      margin: 5rem 0;
+    }
+  }
+
+  .signin-section-a {
+    margin: unset;
+    @media (min-width: $breakpoint-tablet) {
+      margin: 5rem 0;
+    }
+    h2 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 114.5%;
+      letter-spacing: 0.035em;
+      color: #030303;
+      margin: 5rem 0;
+    }
+    p {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 153.89%;
+      letter-spacing: 0.1em;
+      color: #686868;
+      border-radius: 11px;
+    }
+    img {
+      width: 95%;
+      height: 100%;
+      margin: 5rem 1rem;
+      @media (min-width: $breakpoint-desktop-l) {
+        width: unset;
+      }
+    }
+  }
+
+  .signin-card {
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    @media (min-width: $breakpoint-tablet) {
+      margin: 8rem 0;
+      padding: 1rem 3rem;
+      width: 400px;
+      margin: auto;
+    }
+
+    @media (min-width: $breakpoint-desktop-l) {
+      margin: 20rem 0;
+      margin-left: 15rem;
+    }
+    hr {
+      width: 80%;
+      align-self: center;
+      margin: 0rem 0 3rem 0;
+      border-color: #111111;
+    }
+
+    h2 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 153.89%;
+      text-align: center;
+      letter-spacing: -0.005em;
+      color: #232323;
+      border-radius: 11px;
+      margin: 3rem 0rem 2rem 0rem;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      label {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 153.89%;
+        letter-spacing: 0.1em;
+        color: #232323;
+        border-radius: 11px;
+        margin: 1rem 0;
+      }
+
+      input {
+        overflow: visible;
+        border: 1px solid #aeaeae;
+        border-radius: 11px;
+        height: 50px;
+        background: rgba(0, 173, 210, 0.01);
+        padding: 0 1rem;
+        width: 100%;
+        &:focus {
+          border: 1px solid #0047c6;
+          outline: unset;
+          outline-color: unset;
+        }
+      }
+
+      span {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 153.89%;
+        letter-spacing: 0.015em;
+        color: #232323;
+        border-radius: 11px;
+        text-align: right;
+        margin: 2rem 0;
+      }
+    }
+
+    button {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 153.89%;
+      letter-spacing: 0.015em;
+      color: #ffffff;
+      border-radius: 11px;
+      background-color: #09789b;
+      border-radius: 11px;
+      padding: 1.5rem 1rem;
+      width: 100%;
+      border: none;
+      @media (min-width: $breakpoint-tablet) {
+        width: 100%;
+      }
+      @media (min-width: $breakpoint-tablet) {
+        width: 100%;
+      }
+    }
+    .signin-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 153.89%;
+        letter-spacing: 0.1em;
+        color: #232323;
+        border-radius: 11px;
+        margin: 2rem 0;
+      }
+      .colored {
+        color: #0047c6;
+        margin: 2rem 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .card:not(.card-plain):hover {
+    transform: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    -moz-transform: unset;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+  }
+}

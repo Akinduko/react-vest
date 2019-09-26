@@ -1,0 +1,81 @@
+@import "../../assets/scss/variables";
+
+.faq--accordion-container {
+  margin: 7rem 2rem;
+  @media (min-width: $breakpoint-tablet) {
+    margin: 7rem 4rem;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin: 7rem 7rem;
+  }
+  @media (min-width: $breakpoint-desktop-l) {
+    margin: 7rem 20rem;
+  }
+  .card-header {
+    padding: 2rem 4rem;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 3px !important;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    color: #090909;
+  }
+  .card .card-body {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 20px 4rem;
+    color: rgba(20, 33, 61, 0.51);
+  }
+}
+
+.faq--search-container {
+  .oc-search-bar {
+    width: 100%;
+    height: 34px;
+    border: unset;
+    justify-content: center;
+    display: flex;
+    margin: 5rem 0.5rem;
+
+    .input-group {
+      width: 91%;
+      @media (min-width: $breakpoint-tablet) {
+        width: 60%;
+      }
+      background: #ffffff !important;
+      border: 1px solid #e5e5e5 !important;
+      box-sizing: border-box !important;
+      border-radius: 5px !important;
+
+      input {
+        font-family: Nunito !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 12px !important;
+        line-height: 16px !important;
+        color: #bdbdbd !important;
+      }
+    }
+    .input-group-btn {
+      .btn {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border: unset;
+        svg {
+          color: #490f83;
+        }
+      }
+    }
+  }
+}

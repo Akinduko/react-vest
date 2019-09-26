@@ -1,0 +1,142 @@
+@import "../../assets/scss/variables";
+
+.contact--header-container {
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5rem;
+
+  @media (min-width: $breakpoint-desktop) {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unset;
+    justify-content: space-between;
+    padding: 0rem 0rem 0rem 5rem;
+  }
+
+  .contact--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-position: right;
+    background-image: url(/static/media/contact-header.0f3c8f4b.svg);
+    background-repeat: no-repeat;
+    @media (min-width: $breakpoint-desktop) {
+      background-size: 500px 600px;
+      height: 100%;
+    }
+    .contact--section-a {
+      h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.05em;
+        color: #031b4e;
+        margin: 0;
+      }
+      p {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #605d5d;
+        padding: 1rem 0;
+      }
+      .btn {
+        text-transform: none;
+        padding: 0.5rem 24px;
+        background: #ff9b00;
+        border-radius: 50px;
+        border: none;
+        margin-top: 2rem;
+
+        button {
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 25px;
+          letter-spacing: 0.1em;
+          color: #ffffff;
+        }
+      }
+    }
+    .contact--section-b {
+      h2 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 37px;
+        letter-spacing: 0.1em;
+        color: #ff8d07;
+        margin: 0;
+      }
+      p {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #605d5d;
+        white-space: nowrap;
+        padding: 1rem 0;
+      }
+      .contact--enquiries {
+        padding: 2rem 0;
+
+        p {
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 28px;
+          letter-spacing: 0.1em;
+          color: #605d5d;
+          padding: 0;
+        }
+        .colored {
+          color: #ff8d07;
+        }
+      }
+    }
+  }
+  .contact-us-image {
+    img {
+      width: 100%;
+      height: 100%;
+      @media (min-width: $breakpoint-desktop) {
+        height: 70%;
+        width: 100%;
+        margin-top: 27%;
+      }
+      @media (min-width: $breakpoint-desktop-l) {
+        height: 80%;
+        width: 80%;
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+.btn-link-contact {
+  background: unset;
+  border: none;
+
+  &:hover {
+    background: unset;
+    border: none;
+  }
+  &:focus {
+    outline: unset;
+    outline: unset;
+  }
+}

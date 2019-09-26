@@ -1,0 +1,102 @@
+@import "../../assets/scss/variables";
+
+.policy--header-container {
+  margin: 7rem 3rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 7rem 5rem;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin: 7rem 7rem;
+  }
+  @media (min-width: $breakpoint-desktop-l) {
+    margin: 7rem 20rem;
+  }
+
+  .nav-pills .nav-item .nav-link {
+    border-radius: unset !important;
+    margin: 0;
+    border: unset !important;
+    background-color: unset !important;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 1rem;
+    color: rgba(189, 189, 189, 0.46) !important;
+    box-sizing: unset;
+  }
+  .nav-tabs .nav-item .nav-link.active:before,
+  .nav-tabs .nav-item .nav-link.active:hover:before,
+  .nav-tabs .nav-item .nav-link.active:focus:before {
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
+    content: "";
+    display: unset;
+    position: unset;
+    right: unset;
+    bottom: unset;
+  }
+  .nav-tabs .nav-item .nav-link.active:after,
+  .nav-tabs .nav-item .nav-link.active:hover:after,
+  .nav-tabs .nav-item .nav-link.active:focus:after {
+    border-bottom: unset;
+    border-left: unset;
+    border-right: unset;
+    content: "";
+    display: unset;
+    position: unset;
+    right: unset;
+    bottom: unset;
+  }
+  .nav-pills .nav-item .nav-link.active {
+    padding: 0 1rem;
+    color: #09789b !important;
+    border-left: 3px solid #ff9b00 !important;
+  }
+  .policy--header-column {
+    padding: 0;
+    .nav-tabs {
+      padding: 1rem 0;
+      @media (min-width: $breakpoint-tablet) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.privacy--tab-content {
+  background: #fdfffc;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  .tab-content {
+    @media (min-width: $breakpoint-desktop) {
+      padding: 5rem;
+    }
+    h4 {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #09789b;
+      padding: 3rem;
+    }
+    .header-bottom {
+      width: 31.4px;
+      height: 2px;
+      background: #ff9b00;
+    }
+    p {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: justify;
+      color: #000000;
+    }
+  }
+}
