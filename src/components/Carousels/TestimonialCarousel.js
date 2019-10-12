@@ -5,7 +5,7 @@ import React from "react";
 import { Row, Col, Card } from "reactstrap";
 
 import Slider from "react-slick";
-
+import user from "assets/img/user.png";
 
 var settings = {
   dots: true,
@@ -34,7 +34,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>
@@ -54,7 +54,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>
@@ -74,7 +74,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>
@@ -94,7 +94,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>
@@ -114,7 +114,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>
@@ -134,7 +134,7 @@ function TestimonialCarousel() {
                 <img
                   className="testimonial-profile-img m-auto"
                   alt="..."
-                  src={require("assets/img/user.png")}
+                  src={user}
                 />
 
                 <p className="testimonial-profile-name">Mmadu Kelechi</p>

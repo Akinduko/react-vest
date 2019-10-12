@@ -2,8 +2,9 @@ import React from "react";
 
 // reactstrap components
 import { Progress, CardBody, Card, CardFooter } from "reactstrap";
-
 import Slider from "react-slick";
+import women from "assets/img/women.png";
+import graphIcon from "assets/img/svg-icons/graph.svg";
 
 var settings = {
   dots: false,
@@ -48,15 +49,11 @@ function SubscriptionCarousel({ data = [] }) {
       <div key={data[each]}>
         <Card className="subscription-card" onClick={() => viewDeal()}>
           <span className={`card-label ${each.status}`}>{each.title}</span>
-          <img
-            className="subscription-card-image"
-            alt="..."
-            src={require("assets/img/women.png")}
-          />
+          <img className="subscription-card-image" alt="..." src={women} />
 
           <CardBody>
             <div className="invest-time">
-              <img alt="..." src={require("assets/img/svg-icons/graph.svg")} />
+              <img alt="..." src={graphIcon} />
               <span>{`${each.interest}% Returns in ${each.duration} months}`}</span>
             </div>
             <div className="author">
@@ -82,7 +79,9 @@ function SubscriptionCarousel({ data = [] }) {
               </div>
               <div>
                 <span>Total</span>{" "}
-                <span className="ml-1 font-weight-bold">${each.total_payments}</span>
+                <span className="ml-1 font-weight-bold">
+                  ${each.total_payments}
+                </span>
               </div>
             </div>
           </CardFooter>

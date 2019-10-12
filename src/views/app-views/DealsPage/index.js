@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { getDeals } from "../../../store/actions/deals";
 import SearchBar from "@opuscapita/react-searchbar";
 import useReactRouter from "use-react-router";
 // core components
@@ -20,6 +19,11 @@ import {
   Container
 } from "reactstrap";
 import classnames from "classnames";
+import { getDeals } from "../../../store/actions/deals";
+import women from "assets/img/women.png";
+import graph from "assets/img/svg-icons/graph.svg";
+import carret from "assets/icons/icon-caret.svg";
+import correct from "assets/icons/icon-correct.svg"
 
 const initialState = {
   searchValue: "",
@@ -29,8 +33,7 @@ const initialState = {
 };
 
 function DealsPage(props) {
-
-  window.location.href="https://app.flinvests.com/deals"
+  window.location.href = "https://app.flinvests.com/deals";
 
   const { data, loaded } = props.deals;
 
@@ -83,15 +86,11 @@ function DealsPage(props) {
       >
         <Card className="subscription-card">
           <span className={`card-label ${each.status}`}>{each.title}</span>
-          <img
-            className="subscription-card-image"
-            alt="..."
-            src={require("assets/img/women.png")}
-          />
+          <img className="subscription-card-image" alt="..." src={women} />
 
           <CardBody>
             <div className="invest-time">
-              <img alt="..." src={require("assets/img/svg-icons/graph.svg")} />
+              <img alt="..." src={graph} />
               <span>{`${each.interest}% Returns in ${each.duration} months`}</span>
             </div>
             <div className="author">
@@ -144,10 +143,7 @@ function DealsPage(props) {
             <div className="deals-search-select">
               <div className="btn btn--select" onClick={() => toggleSelect()}>
                 <p>{state.filterType || "Filter by"}</p>
-                <img
-                  alt="carret"
-                  src={require("assets/icons/icon-caret.svg")}
-                />
+                <img alt="carret" src={carret} />
               </div>
               <div className="card card--select" hidden={!state.showSelect}>
                 <span onClick={() => selectFilter("Date")}>
@@ -155,7 +151,7 @@ function DealsPage(props) {
                   <img
                     alt="selected"
                     hidden={state.filterType !== "Date"}
-                    src={require("assets/icons/icon-correct.svg")}
+                    src={correct}
                   />
                 </span>
                 <span onClick={() => selectFilter("Duration")}>
@@ -163,7 +159,7 @@ function DealsPage(props) {
                   <img
                     alt="selected"
                     hidden={state.filterType !== "Duration"}
-                    src={require("assets/icons/icon-correct.svg")}
+                    src={correct}
                   />
                 </span>
 
@@ -172,7 +168,7 @@ function DealsPage(props) {
                   <img
                     alt="selected"
                     hidden={state.filterType !== "Industry"}
-                    src={require("assets/icons/icon-correct.svg")}
+                    src={correct}
                   />
                 </span>
 
@@ -181,7 +177,7 @@ function DealsPage(props) {
                   <img
                     alt="selected"
                     hidden={state.filterType !== "Amount"}
-                    src={require("assets/icons/icon-correct.svg")}
+                    src={correct}
                   />
                 </span>
                 <span onClick={() => selectFilter("Type")}>
@@ -189,7 +185,7 @@ function DealsPage(props) {
                   <img
                     alt="selected"
                     hidden={state.filterType !== "Type"}
-                    src={require("assets/icons/icon-correct.svg")}
+                    src={correct}
                   />
                 </span>
               </div>

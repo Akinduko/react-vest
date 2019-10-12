@@ -79,7 +79,17 @@ const SimpleSlider = () => {
 
 function AboutPage() {
   return (
-    <main className="about--main--container">
+    <main
+      className="about--main--container"
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="true"
+      data-aos-anchor-placement="top-center"
+    >
       <WebsiteNavbar customClassName="about--nav" />
       <section className="about--header-container">
         <div className="about--header-container__background">
@@ -89,8 +99,8 @@ function AboutPage() {
               <span>WE EMPOWER:</span>
               <span className="colored">INVIDUALS | CORPORATE BODIES</span>
             </p>
-            <a href="/" className="btn btn__about">
-              <button>Get to Know Us</button>
+            <a href="/contact" className="btn btn__about">
+              <button>Contact us</button>
             </a>
           </div>
         </div>
@@ -98,7 +108,17 @@ function AboutPage() {
 
       <section className="about--section-container">
         <div className="about--section-content">
-          <div className="left">
+          <div
+            className="left"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Flinvest Group</h1>
             <p>
               Our core objective is to provide investors with higher returns
@@ -115,7 +135,17 @@ function AboutPage() {
               interest payments are not guaranteed.
             </p>
           </div>
-          <div className="right--video">
+          <div
+            className="right--video"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="20"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             {/* <video height="240" controls>
               <source
                 src="https://www.youtube.com/watch?v=neD5tZlDCs4&gl=NG&hl=en-GB"
@@ -124,6 +154,7 @@ function AboutPage() {
             </video> */}
             <iframe
               width="500"
+              title="testimonial"
               height="270"
               src="https://www.youtube.com/embed/cPy65Kl7Un8"
               frameborder="0"
@@ -137,7 +168,17 @@ function AboutPage() {
         <div className="about--offers-content">
           <h2>What Flinvest offers ?</h2>
 
-          <div className="offer">
+          <div
+            className="offer"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Reinvent credit and investing</h1>
             <p>
               Our technology is designed to deliver creative finance solutions
@@ -145,7 +186,17 @@ function AboutPage() {
               furthermore expand investment options for dealmakers.
             </p>
           </div>
-          <div className="offer">
+          <div
+            className="offer"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="60"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Deliver World-Class And Personalized Experience</h1>
             <p>
               We make the process of harmonizing deals and investment a seamless
@@ -153,7 +204,17 @@ function AboutPage() {
               and viable investment, with a few clicks.
             </p>
           </div>
-          <div className="offer">
+          <div
+            className="offer"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="70"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Verified And Safe Investment Opportunities</h1>
             <p>
               Our platform presents a trading floor that levels the playing
@@ -171,22 +232,6 @@ function AboutPage() {
           <SimpleSlider />
         </div>
       </section>
-
-      {/* <section className="about--partner-container">
-        <h1>Partners</h1>
-        <p>
-          Flinvest is an online Peer 2 Peer/Consulting platform which connects
-          businesses with investors and renders consulting services online.
-        </p>
-
-        <div className="partners">
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-        </div>
-      </section> */}
 
       <WebsiteFooter />
     </main>

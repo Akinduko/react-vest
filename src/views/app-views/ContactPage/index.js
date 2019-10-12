@@ -4,6 +4,8 @@ import React from "react";
 import WebsiteNavbar from "components/Navbars/WebsiteNavbar.js";
 import WebsiteFooter from "components/Footers/WebsiteFooter.js";
 import contact from "assets/images/contact-us.png";
+import partner from "assets/images/partner.svg";
+import mail from "assets/icons/icon-mail.svg";
 
 function ContactPage() {
   const { innerWidth } = window;
@@ -18,10 +20,8 @@ function ContactPage() {
               We are just one step away, Enter your details let’s get connected
             </p>
             <a href="mailto:info@Flinvest.com" className="btn btn__about">
-              <img alt="mail" src={require("assets/icons/icon-mail.svg")} />
-              <button className="btn-link-contact">
-                info@Flinvest.com
-              </button>
+              <img alt="mail" src={mail} />
+              <button className="btn-link-contact">info@Flinvest.com</button>
             </a>
           </div>
           <div className="contact--section-b">
@@ -40,7 +40,7 @@ function ContactPage() {
           </div>
         </div>
         <div className="contact-us-image">
-          <img src={contact} />
+          <img alt="" src={contact} />
         </div>
       </section>
       <section>
@@ -50,6 +50,7 @@ function ContactPage() {
           height="450"
           frameborder="0"
           style={{ border: 0 }}
+          title="location"
           allowfullscreen=""
         ></iframe>
       </section>
@@ -61,11 +62,11 @@ function ContactPage() {
         </p>
 
         <div className="partners">
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
-          <img alt="" src={require("assets/images/partner.svg")} />
+          <img alt="" src={partner} />
+          <img alt="" src={partner} />
+          <img alt="" src={partner} />
+          <img alt="" src={partner} />
+          <img alt="" src={partner} />
         </div>
       </section>
 

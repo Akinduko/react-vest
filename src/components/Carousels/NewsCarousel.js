@@ -1,6 +1,9 @@
 import React from "react";
 
 import Slider from "react-slick";
+import news1 from "assets/img/post-1.jpg";
+import news2 from "assets/img/post-3.jpg";
+import news3 from "assets/img/post-2.jpg";
 
 var settings = {
   dots: false,
@@ -46,7 +49,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-1.jpg") + ")"
+              backgroundImage: "url(" + news1 + ")"
             }}
             className="news-link"
           >
@@ -59,7 +62,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-3.jpg") + ")"
+              backgroundImage: "url(" + news2 + ")"
             }}
             className="news-link"
           >
@@ -72,7 +75,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-2.jpg") + ")"
+              backgroundImage: "url(" + news3 + ")"
             }}
             className="news-link"
           >
@@ -85,7 +88,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-1.jpg") + ")"
+              backgroundImage: "url(" + news1 + ")"
             }}
             className="news-link"
           >
@@ -98,7 +101,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-3.jpg") + ")"
+              backgroundImage: "url(" + news2 + ")"
             }}
             className="news-link"
           >
@@ -111,7 +114,7 @@ function NewsCarousel() {
           <a
             href="/"
             style={{
-              backgroundImage: "url(" + require("assets/img/post-2.jpg") + ")"
+              backgroundImage: "url(" + news3 + ")"
             }}
             className="news-link"
           >
