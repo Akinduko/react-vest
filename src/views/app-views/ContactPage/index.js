@@ -19,7 +19,9 @@ function ContactPage() {
             </p>
             <a href="mailto:info@Flinvest.com" className="btn btn__about">
               <img alt="mail" src={require("assets/icons/icon-mail.svg")} />
-              <button className="btn-link-contact">info@Flinvest.com</button>
+              <button className="btn-link-contact">
+                info@Flinvest.com
+              </button>
             </a>
           </div>
           <div className="contact--section-b">
@@ -30,7 +32,7 @@ function ContactPage() {
               Lekki Phase One, Lagos.
             </p>
             <div className="contact--enquiries">
-              <p>For press enquiries, please contact </p>
+              <p>For enquiries, please contact </p>
               <a className="colored" href="mailto:info@Flinvest.com">
                 info@Flinvest.com
               </a>

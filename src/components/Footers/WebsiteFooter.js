@@ -36,13 +36,13 @@ function WebsiteFooter({ auth }) {
       <footer className="footer website-footer">
         <Container>
           <Row className="justify-content-between">
-            <Col xs="12" sm="8">
+            {/* <Col xs="12" sm="8">
               <Nav className="footer-nav" navbar>
                 <Row>
                   <Col xs="6" sm="4">
                     <h3>Solutions</h3>
                     <NavItem>
-                      <NavLink onClick={() => changePage("/")}>
+                      <NavLink onClick={() => changePage("/about")}>
                         Overview
                       </NavLink>
                     </NavItem>
@@ -96,16 +96,6 @@ function WebsiteFooter({ auth }) {
                     <NavItem>
                       <NavLink onClick={() => changePage("/about")}>
                         What we offer?
-                      </NavLink>
-                    </NavItem>
-                  </Col>
-                  <Col xs="6" sm="4">
-                    <NavItem>
-                      <NavLink
-                        className="colored-link"
-                        onClick={() => changePage("/")}
-                      >
-                        Apply For Fund
                       </NavLink>
                     </NavItem>
                   </Col>
@@ -173,6 +163,55 @@ function WebsiteFooter({ auth }) {
                   Lekki Phase One, Lagos
                 </p>
 
+                <span className="copyright">
+                  <Button className="social-button fb btn-round">
+                    <i className="fa fa-facebook" />
+                  </Button>
+
+                  <Button className="social-button twitter btn-round">
+                    <i className="fa fa-twitter" />
+                  </Button>
+
+                  <Button className="social-button linkedin btn-round">
+                    <i className="fa fa-linkedin" />
+                  </Button>
+                </span>
+                <p>Copyright © 2019 Flinvest</p>
+              </div>
+            </Col> */}
+            <Col
+              xs="12"
+              sm="3"
+              className="d-flex flex-row justify-content-center"
+            >
+              <div className="footer-address mt-sm-0">
+                <img src={FlinvestImg} className="footer-logo" alt="" />
+              </div>
+            </Col>
+            <Col
+              xs="12"
+              sm="3"
+              className="d-flex flex-row justify-content-center"
+            >
+              <div className="footer-address mt-sm-0 custom-footer-address">
+                <h3>Contact</h3>
+                <a className="custom-colored" href="mailto:info@Flinvest.com">
+                  info@Flinvest.com
+                </a>
+                <p>
+                  #1B Emma Abimbola Cole, <br />
+                  Lekki Phase One, Lagos
+                </p>
+                
+              </div>
+            </Col>
+            <Col
+              xs="12"
+              sm="3"
+              className="d-flex flex-row justify-content-center"
+            >
+              <div className="footer-address mt-sm-0">
+                <h3>Socials</h3>
                 <span className="copyright">
                   <Button className="social-button fb btn-round">
                     <i className="fa fa-facebook" />

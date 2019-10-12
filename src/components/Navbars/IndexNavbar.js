@@ -28,6 +28,7 @@ function IndexNavbar() {
       window.removeEventListener('scroll', updateNavbarColor);
     };
   });
+  
   return (
     <Navbar className={classnames('fixed-top', navbarColor)} expand="lg">
       <Container>

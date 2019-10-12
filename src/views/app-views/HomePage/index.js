@@ -169,23 +169,22 @@ function HomePage(props) {
                 <Col xs="12" sm="3" className="feature-item">
                   <img
                     alt="..."
-                    src={require("assets/img/svg-icons/loan.svg")}
+                    src={require("assets/icons/fund.svg")}
+                    style={{ width: 150 }}
                   />
                   <p>Stats coming soon</p>
                   {/* <small>generated to date</small> */}
                 </Col>
                 <Col xs="12" sm="3" className="feature-item">
-                  <img
-                    alt="..."
-                    src={require("assets/img/svg-icons/building.svg")}
-                  />
+                  <img alt="..." src={require("assets/icons/secure.svg")} />
                   <p>Stats coming soon</p>
                   {/* <small>to date</small> */}
                 </Col>
                 <Col xs="12" sm="3" className="feature-item">
                   <img
                     alt="..."
-                    src={require("assets/img/svg-icons/coins-stacked.svg")}
+                    src={require("assets/icons/profits.svg")}
+                    style={{ width: 150 }}
                   />
                   <p>Stats coming soon</p>
                   {/* <small>generated to date</small> */}

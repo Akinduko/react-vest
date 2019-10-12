@@ -2,7 +2,9 @@
 
 .homepage--nav {
   background: #efefef;
-  padding: 5rem 0;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 5rem 0;
+  }
 }
 
 .homepage--header-container {
