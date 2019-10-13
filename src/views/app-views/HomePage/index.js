@@ -14,6 +14,7 @@ import homepageIllustration from "assets/images/illustration-homepage-sect2.svg"
 import sme from "assets/img/svg-icons/sme.svg";
 import investments from "assets/img/svg-icons/investments.svg";
 import projectImg from "assets/img/svg-icons/project.svg";
+import howItWorksImage from "assets/images/how-it-works.png";
 
 function HomePage(props) {
   const { loaded } = props.deals;
@@ -103,6 +104,17 @@ function HomePage(props) {
       <div className="main">
         <div className="section deals">
           <Container>
+            <section className="homepage-how-it-works">
+              <div className="homepage-overlay">
+                <h1>How Flinvest works</h1>
+                <img
+                  className="img-fluid mt-5"
+                  alt="..."
+                  src={howItWorksImage}
+                />
+              </div>
+            </section>
+
             <Row>
               <Col xs="12" md="4">
                 <Card className="deals-card">
