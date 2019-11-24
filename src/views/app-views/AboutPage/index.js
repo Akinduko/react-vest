@@ -1,16 +1,17 @@
-import React from "react";
+import React from 'react';
+import Slider from 'react-slick';
 
 // core components
-import WebsiteNavbar from "components/Navbars/WebsiteNavbar.js";
-import WebsiteFooter from "components/Footers/WebsiteFooter.js";
-import Slider from "react-slick";
+import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
+import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
+import leaderDapo from 'assets/images/leadership-dapo.JPG';
 
 const SimpleSlider = () => {
   const settings = {
     centerMode: true,
     // autoplay: true,
     // autoplaySpeed: 30000,
-    centerPadding: "60px",
+    centerPadding: '60px',
     slidesToShow: 3,
     dots: true,
     infinite: false,
@@ -20,20 +21,20 @@ const SimpleSlider = () => {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3
-        }
+          centerPadding: '40px',
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1
-        }
-      }
-    ]
+          centerPadding: '40px',
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -43,32 +44,33 @@ const SimpleSlider = () => {
           <div
             className="caption"
             style={{
-              backgroundImage: `url('https://via.placeholder.com/250')`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat"
+              backgroundImage: 'url(' + leaderDapo + ')',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+
+              backgroundRepeat: 'no-repeat',
             }}
           >
-            <p>Doyin Adegbulugbe</p>
+            <p className="role">Dapo Eniola</p>
             <p className="role">CEO</p>
           </div>
           <div className="text-overflow">
             <p>
-              An alumnus of Harvard Business School (Executive Education
-              Programme), Boston, USA (Global Strategic Management).
+              Dapo is an ingenious business developer, a business solutions integrator with over 15
+              years of executive management level experience identifying, qualifying, building policies
+              for, and selling enabling technologies and enterprise systems that facilitate business
+              processes, national development and strategic organization objectives.
               <br />
               <br />
-              Holds an MBA from Lagos State University, Lagos, Nigeria He has
-              two decades of banking experience in and outside Nigeria.
+              He combines a powerful blend of technology vision and business acumen in consistent
+              pursuit and development of innovative business strategies supported by cost-eﬀective,
+              high-performance IT infrastructures and applications.
               <br />
               <br />
-              Held strategic positions in Ecobank Plc Zenith Bank Plc Guaranty
-              Trust Bank Plc Former Executive Director, Business Development and
-              Strategy, Skye Bank Gambia (a subsidiary of Polaris bank Nigeria).
-              <br />
-              <br />
-              Former Managing Director/Chief Executive Officer of Skye Bank
-              Gambia.
+              A recipient of several innovative and consulting excellence awards, he possesses great
+              analytic skills and expert knowledge of turn-key enterprise solutions in Payment
+              Solutions, Fintech Solutions, Multi-Channel Transaction Management, Multi-Channel
+              Marketing Solutions, Enterprise Data Warehouse &amp; Data Analytics.
             </p>
           </div>
         </div>
@@ -77,7 +79,7 @@ const SimpleSlider = () => {
   );
 };
 
-function AboutPage() {
+function AboutPage () {
   return (
     <main
       className="about--main--container"
@@ -160,7 +162,7 @@ function AboutPage() {
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            />
           </div>
         </div>
       </section>
