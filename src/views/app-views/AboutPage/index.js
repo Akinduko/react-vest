@@ -1,80 +1,46 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 // core components
+import SimpleSlider from 'components/Sliders';
 import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
 import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
 import leaderDapo from 'assets/images/leadership-dapo.JPG';
 
-const SimpleSlider = () => {
-  const settings = {
-    centerMode: true,
-    // autoplay: true,
-    // autoplaySpeed: 30000,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    dots: true,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+const Leadership = () => {
   return (
-    <div className="testimonial--container">
-      <Slider {...settings}>
-        <div className="legend">
-          <div
-            className="caption"
-            style={{
-              backgroundImage: 'url(' + leaderDapo + ')',
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
+    <div className="legend">
+      <div
+        className="caption"
+        style={{
+          backgroundImage: 'url(' + leaderDapo + ')',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
 
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            <p className="role">Dapo Eniola</p>
-            <p className="role">CEO</p>
-          </div>
-          <div className="text-overflow">
-            <p>
-              Dapo is an ingenious business developer, a business solutions integrator with over 15
-              years of executive management level experience identifying, qualifying, building policies
-              for, and selling enabling technologies and enterprise systems that facilitate business
-              processes, national development and strategic organization objectives.
-              <br />
-              <br />
-              He combines a powerful blend of technology vision and business acumen in consistent
-              pursuit and development of innovative business strategies supported by cost-eﬀective,
-              high-performance IT infrastructures and applications.
-              <br />
-              <br />
-              A recipient of several innovative and consulting excellence awards, he possesses great
-              analytic skills and expert knowledge of turn-key enterprise solutions in Payment
-              Solutions, Fintech Solutions, Multi-Channel Transaction Management, Multi-Channel
-              Marketing Solutions, Enterprise Data Warehouse &amp; Data Analytics.
-            </p>
-          </div>
-        </div>
-      </Slider>
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <p className="role">Dapo Eniola</p>
+        <p className="role">CEO</p>
+      </div>
+      <div className="text-overflow">
+        <p>
+          Dapo is an ingenious business developer, a business solutions integrator with over 15
+          years of executive management level experience identifying, qualifying, building policies
+          for, and selling enabling technologies and enterprise systems that facilitate business
+          processes, national development and strategic organization objectives.
+          <br />
+          <br />
+          He combines a powerful blend of technology vision and business acumen in consistent
+          pursuit and development of innovative business strategies supported by cost-eﬀective,
+          high-performance IT infrastructures and applications.
+          <br />
+          <br />
+          A recipient of several innovative and consulting excellence awards, he possesses great
+          analytic skills and expert knowledge of turn-key enterprise solutions in Payment
+          Solutions, Fintech Solutions, Multi-Channel Transaction Management, Multi-Channel
+          Marketing Solutions, Enterprise Data Warehouse &amp; Data Analytics.
+        </p>
+      </div>
     </div>
   );
 };
@@ -105,6 +71,7 @@ function AboutPage () {
               <button>Contact us</button>
             </a>
           </div>
+
         </div>
       </section>
 
@@ -136,6 +103,7 @@ function AboutPage () {
               initial invested capital. This means your capital is at risk and
               interest payments are not guaranteed.
             </p>
+
           </div>
           <div
             className="right--video"
@@ -159,9 +127,7 @@ function AboutPage () {
               title="testimonial"
               height="270"
               src="https://www.youtube.com/embed/cPy65Kl7Un8"
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
             />
           </div>
         </div>
@@ -231,7 +197,15 @@ function AboutPage () {
       <section className="about--leadership-container">
         <div className="about--header-container__background">
           <h1>Leadership</h1>
-          <SimpleSlider />
+          <div className="testimonial--container">
+            <SimpleSlider
+              components={[{Component: Leadership}]}
+              autoplay={false}
+              arrows={true}
+              dots={true}
+              centerMode={true}
+            />
+          </div>
         </div>
       </section>
 

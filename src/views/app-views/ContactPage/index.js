@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 // core components
-import WebsiteNavbar from "components/Navbars/WebsiteNavbar.js";
-import WebsiteFooter from "components/Footers/WebsiteFooter.js";
-import contact from "assets/images/contact-us.png";
-import partner from "assets/images/partner.svg";
-import mail from "assets/icons/icon-mail.svg";
+import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
+import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
+import contact from 'assets/images/contact-us.png';
+import partner from 'assets/images/partner.svg';
+import mail from 'assets/icons/icon-mail.svg';
 
-function ContactPage() {
-  const { innerWidth } = window;
+function ContactPage () {
+  const {innerWidth} = window;
   return (
     <main className="about--main--container">
       <WebsiteNavbar />
@@ -48,11 +48,10 @@ function ContactPage() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.622558935908!2d3.4727264149286787!3d6.442488125886823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf44c74e0f683%3A0x80082f82147f5435!2s1b%20Emma%20Abimbola%20Cole%2C%20Lekki%20Phase%20I%2C%20Lagos!5e0!3m2!1sen!2sng!4v1569186564104!5m2!1sen!2sng"
           width={innerWidth}
           height="450"
-          frameborder="0"
-          style={{ border: 0 }}
+          style={{border: 0}}
           title="location"
           allowfullscreen=""
-        ></iframe>
+        />
       </section>
       <section className="about--partner-container">
         <h1>Partners</h1>

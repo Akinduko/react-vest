@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 // core components
 import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
 import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
 import SearchBar from '@opuscapita/react-searchbar';
-import { Accordion, Card } from 'react-bootstrap';
+import {Accordion, Card} from 'react-bootstrap';
 
-function FaqPage() {
+function FaqPage () {
   const initialState = {
-    searchValue: ''
+    searchValue: '',
   };
 
-  const [state, setState] = useState(initialState);
+  const [state, setState] = useState (initialState);
 
   const handleChange = event => {
-    const {
-      target: { value }
-    } = event;
-    setState({ searchValue: value });
+    const {target: {value}} = event;
+    setState ({searchValue: value});
   };
 
   return (
@@ -25,10 +23,10 @@ function FaqPage() {
       <WebsiteNavbar />
       <section className="faq--search-container">
         <SearchBar
-          onSearch={event => handleChange(event)}
+          onSearch={event => handleChange (event)}
           value={state.value}
           translations={{
-            searchPlaceHolder: 'Type your question here, someone might have asked it already'
+            searchPlaceHolder: 'Type your question here, someone might have asked it already',
           }}
         />
       </section>

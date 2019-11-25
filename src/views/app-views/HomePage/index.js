@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import useReactRouter from 'use-react-router';
 import {connect} from 'react-redux';
 
@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import {Card, CardBody, Container, Row, Col} from 'reactstrap';
 
 // core components
+import SimpleSlider from 'components/Sliders';
 import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
 import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
 
@@ -18,16 +19,31 @@ import projectImg from 'assets/img/svg-icons/project.svg';
 import landingBackground from 'assets/images/bg-homepage-header.png';
 
 function HomePage (props) {
-  const {loaded} = props.deals;
-
-  useEffect (() => {
-    if (!loaded) props.getDeals ();
-  });
-
   const {history} = useReactRouter ();
 
   const changePage = page => {
     return history.push (`${page}`);
+  };
+
+  const Content = () => {
+    return [
+      'The grind to get a project up and running is not a walk in the park, but absolutely possible. For a project idea to come full cycle and assume a semblance of existence, the elephant in the room (FUNDING) must be addressed. This is where FLINVEST’s forte comes to play.',
+      'Brilliant project ideas whose promoters struggle to find financing now have an alternative in FLINVEST. Our platform allows individuals and business entities with verifiable Project, LPO, and Venture deals in need of financing to raise funds, either in part or in full, to execute their ideas.',
+      'FLINVEST has all the ducks in line to make financing projects easy, fast, and reliable. Our processes are firm and seamless, and all deal claims are authenticated before they are featured on our platform.',
+      'We invest significantly in the verification of every deal, and with our seasoned team of auditors we gloss over every detail (source, process, payment) of an investable project to ensure that our investors’ capital is safe, insured, and profitable.',
+      'For both deal owners and investors, FLINVEST is redefining the venture capital space with innovation, and ensuring a dependable system where vested interested are secured and well-rewarded.',
+    ].map ((each, i) => {
+      const Component = () => (
+        <p key={`slider-${i}`}>
+          <q>
+            {each}
+          </q>
+        </p>
+      );
+      return {
+        Component,
+      };
+    });
   };
 
   return (
@@ -42,6 +58,7 @@ function HomePage (props) {
       data-aos-anchor-placement="top-center"
     >
       <WebsiteNavbar customClassName="homepage--nav" />
+
       <section
         style={{
           backgroundRepeat: 'no-repeat',
@@ -53,62 +70,87 @@ function HomePage (props) {
         }}
       >
         <div className="homepage--header-container__background">
-          <div className="homepage--header-copy">
-            <h1>
-              The No 1 place for <br />
-              highly secured deals.
-            </h1>
-            <p className="homepage--header-copy__p">
-              WE EMPOWER: INDIVIDUALS AND BUSINESSES
-            </p>
-            <a
-              href="https://app.flinvests.com/register"
-              className="btn btn__homepage"
-            >
-              <button>Get started here.</button>
-            </a>
-          </div>
+          <Container>
+            <div className="homepage--header-copy">
+              <h1>
+                The No 1 place for <br />
+                highly secured deals.
+              </h1>
+              <p className="homepage--header-copy__p">
+                WE EMPOWER: INDIVIDUALS AND BUSINESSES
+              </p>
+              <a
+                href="https://app.flinvests.com/register"
+                className="btn btn__homepage"
+              >
+                <button>Get started here.</button>
+              </a>
+            </div>
+          </Container>
         </div>
       </section>
+      <div className="information-container">
+        <div className="information-background">
+
+          <SimpleSlider
+            components={Content ()}
+            autoplay={true}
+            arrows={false}
+            dots={false}
+            centerMode={true}
+            slidesToShow={1}
+            infinite={true}
+          />
+        </div>
+      </div>
+
       <section className="homepage--pattern-container">
-        <div
-          className="homepage--pattern-illustration"
-          data-aos="fade-right"
-          data-aos-offset="50"
-          data-aos-delay="20"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-        >
-          <img alt="..." src={homepageIllustration} />
-        </div>
-        <div
-          className="caption"
-          data-aos="fade-down"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-        >
-          <h1>Invest, Get Investment And Grow.</h1>
-          <p>
-            The grind to get a project up and running is not a walk in the park,
-            but absolutely possible. For a project idea to come full cycle and
-            assume a semblance of existence, the elephant in the room (FUNDING)
-            must be addressed. This is where FLINVEST’s forte comes to play.
-          </p>
-          <a href="/about" className="btn-link">
-            <button onClick={() => changePage ('/about')}>
-              More about Us.
-            </button>
-            <span className="btn--border--bottom" />
-          </a>
-        </div>
+        <Container>
+          <Row>
+            <Col xs="12" md="6">
+              <div
+                className="homepage--pattern-illustration"
+                data-aos="fade-right"
+                data-aos-offset="50"
+                data-aos-delay="20"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <img alt="..." src={homepageIllustration} />
+              </div>
+            </Col>
+            <Col xs="12" md="6">
+              <div
+                className="caption"
+                data-aos="fade-down"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <h1>Invest, Get Investment And Grow.</h1>
+                <p>
+                  The grind to get a project up and running is not a walk in the park,
+                  but absolutely possible. For a project idea to come full cycle and
+                  assume a semblance of existence, the elephant in the room (FUNDING)
+                  must be addressed. This is where FLINVEST’s forte comes to play.
+                </p>
+                <a href="/about" className="btn-link">
+                  <button onClick={() => changePage ('/about')}>
+                    More about Us.
+                  </button>
+                  <span className="btn--border--bottom" />
+                </a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       <div className="main">

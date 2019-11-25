@@ -1,30 +1,22 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
 
 // core components
-import WebsiteNavbar from "components/Navbars/WebsiteNavbar.js";
-import WebsiteFooter from "components/Footers/WebsiteFooter.js";
-import {
-  TabContent,
-  TabPane,
-  Nav,
-  NavItem,
-  NavLink,
-  Row,
-  Col
-} from "reactstrap";
-import classnames from "classnames";
+import WebsiteNavbar from 'components/Navbars/WebsiteNavbar.js';
+import WebsiteFooter from 'components/Footers/WebsiteFooter.js';
+import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col} from 'reactstrap';
+import classnames from 'classnames';
 
-function PrivacyPage() {
+function PrivacyPage () {
   const initialState = {
-    activeTab: "1"
+    activeTab: '1',
   };
 
-  const [state, setState] = useState(initialState);
+  const [state, setState] = useState (initialState);
 
   const toggle = tab => {
     if (state.activeTab !== tab) {
-      setState({
-        activeTab: tab
+      setState ({
+        activeTab: tab,
       });
     }
   };
@@ -37,9 +29,9 @@ function PrivacyPage() {
             <Nav tabs vertical pills>
               <NavItem>
                 <NavLink
-                  className={classnames({ active: state.activeTab === "1" })}
+                  className={classnames ({active: state.activeTab === '1'})}
                   onClick={() => {
-                    toggle("1");
+                    toggle ('1');
                   }}
                 >
                   Terms of Investment

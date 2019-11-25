@@ -1,5 +1,9 @@
 @import '../../assets/scss/variables';
 
+section {
+	margin-bottom: 0rem !important;
+}
+
 .about--nav {
 	background: transparent;
 }
@@ -136,7 +140,7 @@
 		}
 	}
 }
-#c0c0c0 .about--offers-container {
+.about--offers-container {
 	background-image: linear-gradient(
 			180deg,
 			#ffffff 0%,
@@ -401,6 +405,8 @@
 }
 
 .testimonial--container {
+	width: 100%;
+
 	.slick-slide {
 		height: 650px;
 		div {
